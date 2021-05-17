@@ -1,6 +1,6 @@
 # UwU-startup-onepage
 
-Este repositorio forma parte del desarrollo de proyecto web para el startup UwU®, que es una One page (Desktop first) para su Instagram Shop. Esta conformado por dos carpetas, una destinada para el diseño UI (donde se puede visualizar la IA, el wireframing, el diseño plano y el prototipo de alta fidelidad) y otra para el desarrollo Front end.
+Este repositorio forma parte del desarrollo de proyecto web para el startup UwU®, que es una One page (Desktop first) para su Instagram Shop. Esta conformado por dos carpetas, una destinada para el diseño UI (donde se puede visualizar la IA, el wireframing, el diseño plano y el prototipo de alta fidelidad) y otra para el desarrollo Front end (html, css, js).
  
  ~~~
  
