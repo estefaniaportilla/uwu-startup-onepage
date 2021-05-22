@@ -5,36 +5,47 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>UwU Instagram Shop</title>
+        <link rel="stylesheet" href="reset.css" type="text/css">
         <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="scripts.js" type="text/javascript"></script>
     </head>
     <body>
-        <header class="header">
-            <img class="logo" src="imgs/logo-uwu.png">
-            <ul class="nav">
-                <li><a href="#home"">Inicio</a></li>
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#store">Tienda</a></li>
-                <li><a href="#adopt">Adopciones</a></li>
-                <li><button class="btn-contact">Contacto</button></li>
+        <!-- <header class="header">    
+        </header> -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home" class="logo"><img src="imgs/logo-uwu.png" alt="UwU red logo"></a>
+            </div>
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <ul class="main-nav">
+                <li class="nav-item"><a href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a href="#acercade">Acerca de</a></li>
+                <li class="nav-item"><a href="#tienda">Tienda</a></li>
+                <li class="nav-item"><a href="#adoptar">Adopciones</a></li>
+                <li class="nav-item"><button class="btn" href=#contacto">Contacto</button></li>
             </ul>
-        </header>
-        <section class="home" id="#home">
-            <div class="about-text">
-                <h1>Bienvenida</h1>
+        </nav>
+        <section id="#inicio" class="sec-one">
+            <div>
+                <h1>¡Bienvenid@, gracias por estar aquí!</h1>
                 <p>Chase ball of string eat plants, meow, and throw up because I ate plants.</p>
-                <button class="btn-home">Ir a la Instagram Shop</button>
+                <button class="btn">Ir a la Instagram Shop</button>
             </div>
             <img>
         </section>
-        <section class="about" id="#about">
-            <h1>¿Quiénes somos?</h1>
+        <section id="#acercade" class="sec-two">
+            <h2>¿Quiénes somos?</h2>
             <div>
                 <img>
                 <p>Chase ball of string eat plants, meow, and throw up because I ate plants.</p>
             </div>
         </section>
-        <section class="store" id="#store">
-            <h1>¡Disfruta de nuestros produtos!</h1>
+        <section id="#tienda" class="sec-three">
+            <h3>¡Disfruta de nuestros produtos!</h3>
             <p>Chase ball of string eat plants, meow, and throw up because I ate plants.</p>
             <div>
                 <nav>
@@ -54,10 +65,10 @@
                 <img>
                 <img>
             </div>
-            <button class="btn-ig-shop">Ir a la Instagram Shop</button>
+            <button class="btn">Ir a la Instagram Shop</button>
         </section>
-        <section class="adopt" id="#adopt">
-            <h1>¡Gatitos en busca de un hogar!</h1>
+        <section id="#adoptar" class=sec-four>
+            <h3>¡Gatitos en busca de un hogar!</h3>
             <p>Chase ball of string eat plants, meow, and throw up because I ate plants.</p>
             <div>
                 <nav>
@@ -77,22 +88,22 @@
                 <img>
                 <img>
             </div>
-            <button class="btn-cats">Conoce más gatitos</button>
+            <button class="btn">Conoce más gatitos</button>
         </section>
-        <section class="contact" id="#contact">
-            <h1>Escríbenos</h1>
+        <section id="#contacto" class=sec-five>
+            <h3>Escríbenos</h3>
             <p>Chase ball of string eat plants, meow, and throw up because I ate plants.</p>
             <form>
                 <input type="text" name="Nombre" placeholder="Nombre">
                 <input type="email" name="Correo" placeholder="Correo">
                 <input type="text" name="Asunto" placeholder="Asunto">
                 <textarea name="Mensaje" placeholder="Mensaje"></textarea>
-                <button>Enviar mensaje</button>
+                <button class="btn">Enviar mensaje</button>
             </form>
         </section>
         <footer>
-            <img>
+            <di><a href="#home" class="logo"><img src="imgs/logo-uwu.png" alt="UwU red logo"></a></di>
             <p>DISEÑO EPORTILLA.COM — COPYRIGHT UWU 2021 — PRIVACY POLICY</p>
-        </footer>
+        </footer> 
     </body>
 </html>

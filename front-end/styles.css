@@ -2,100 +2,186 @@
 
 :root {
     box-sizing: border-box;
-    --main-color: #f46a6a;
+    font-family: 'IBM Plex Sans Regular', sans-serif;
+    --main-red: #F46A6A;
+    --main-yellow: #FFCB39;
+    --main-dark-grey: #3F3F43;
 }
 
 @font-face {
-    font-family: 'Nunito Bold', sans-serif;
-    src: url(fonts/Nunito-Bold.ttf);
+    font-family: 'Nunito Black', sans-serif;
+    src: url(fonts/Nunito-Black.ttf);
 }
 
 @font-face {
-    font-family: 'IBM Plex Sans Regular', sans-serif;;
+    font-family: 'IBM Plex Sans Regular', sans-serif;
     src: url(fonts/IBMPlexSans-Regular.ttf);
 }
 
-body {
-    font-family: 'IBM Plex Sans Regular', sans-serif;
-    margin: 0;
-    padding: 0;
+h1, h2, h3 {
+    font-family: 'Nunito Black', sans-serif;
 }
 
-/* Header */
-  
-.header {
-    line-height: 90px;
-    width: 100%;
-    transition: line-height 0.2s linear, box-shadow 0.2s linear;
-    position: fixed;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.025); 
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+.btn {
+    background-color: var(--main-red);
+    color: #fff;
+    padding: 1em 2em;
+    border-radius: 28px;
+}
+
+section {
+    padding: 2em;
+    border: 1px solid black;
 }
 
 /* Navbar */
-.nav {
-    border: none;
-    border-radius: 0;
-    margin-bottom: 0;
-    background: none;
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
+.navbar {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
 }
 
-ul.nav {
-    float: right;
-    list-style: none;
-    margin: 0;
-    padding: 0 1em 0 0;
-}
-  
-ul.nav li {
-    float: left;
-    position: relative;
-}
-  
-ul.nav li a {
-    transition: color 0.2s linear;
-    font-size: 1.1em;
-}
-  
-ul.nav li:hover a {
-    color: var(--main-color);
-}
-  
-ul.nav li a {
-    padding: 1.2em;
-    color: initial;
-    text-decoration: initial;
+.logo {
+    align-self: flex-start;
 }
 
-.btn-contact {
-    float: right;
-    margin-left: 10px;
-}
-
-.btn-contact {
-    margin-top: 20px;
-    background: var(--main-color) none repeat scroll 0 0;
-    border: 2px solid var(--main-color);
-    border-radius: 30px;
-    color: #fff;
-    font-weight: 500;
-    border-top: 50px;
-    padding:14px 35px;
-    text-transform: uppercase;
-    box-shadow:0 5px 40px 0 rgba(42, 111, 199, 0.2);
+ul.main-nav li:hover a {
+    color: var(--main-red);
+    text-decoration: none;
 
 }
+
+ul.main-nav a:link {
+    text-decoration: none;
+}
+
+ul.main-nav a:visited { 
+    text-decoration: none; 
+    color: var(--main-dark-grey); 
+}
+
+ul.main a:active {
+    color: var(--main-dark-grey);
+}
+
+.main-nav .nav-item {
+    display: inline-block;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--main-red);
+    border-radius: 10px;
+
+}
+
+@media (max-width: 1024px) {
+    .toggle-btn {
+        display: flex;
+    }
+
+    .main-nav .nav-item {
+        display: none;
+        width: 100%;
+    }
     
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-nav li {
+        text-align: center;
+    }
+
+    .main-nav li a {
+        padding: .5rem 1rem;
+    }
+
+    .main-nav.active {
+        display:flex;
+    }
+}
+
 /* Home */
 
-.about-text h2 {
-	color: #fff;
-	font-size: 60px;
-	padding-top: 250px;
-	text-transform: none;
+.sec-one {
+    display: grid;
+    grid-template-columns: [first] 50% [second] 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-gap: 5px;
+    padding-top: 100px;
+    margin-top: 30px;
 }
+
+.sec-one h1 {
+    grid-column-start: first;
+    grid-row-start: 2;
+    grid-row-start: 2;
+    line-height: 1em;
+    white-space: pre-line;
+    width: 100%;
+    margin: 5px;
+}
+
+.sec-one p {
+    grid-column-start: first;
+    grid-row-start: 3;
+    grid-row-start: 3;
+    margin-top: 1em;
+}
+
+.sec-one button {
+    grid-column-start: first;
+    grid-row-start: 4;
+    grid-row-start: 4;
+    margin-top: 1em;
+}
+
+
+/* About */
+
+/* Store */
+
+/* Adopt */
+
+/* Contact */
+
+/* Footer */
