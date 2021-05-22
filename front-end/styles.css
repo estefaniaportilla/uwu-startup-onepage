@@ -1,3 +1,5 @@
+/* General styles */
+
 :root {
     box-sizing: border-box;
 }
@@ -18,9 +20,7 @@ body {
     padding: 0;
 }
 
-.hold {
-    height: 80px;
-  }
+/* Header */
   
 .header {
     line-height: 80px;
@@ -31,7 +31,7 @@ body {
     left: 0;
     z-index: 100;
     background: rgb(255, 255, 255);
-    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.084); 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.025); 
 }
   
 .header.small {
@@ -40,14 +40,14 @@ body {
 }
   
 .header.small > .container > .logo {
-    height: 40px;
+    height: 1em;
 }
   
 ul.nav {
     float: right;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 1em 0 0;
 }
   
 ul.nav li {
@@ -57,15 +57,21 @@ ul.nav li {
   
 ul.nav li a {
     transition: color 0.2s linear;
-    font-size: 18px;
+    font-size: 1.1em;
 }
   
 ul.nav li:hover a {
-    color: red;
+    color: #f46a6a;
 }
   
 ul.nav li a {
-    padding: 21px;
+    padding: 1.2em;
     color: initial;
     text-decoration: initial;
+}
+
+/* Header */
+
+.home {
+    padding-top: 20vh;
 }
