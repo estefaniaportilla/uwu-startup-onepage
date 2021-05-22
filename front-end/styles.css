@@ -2,6 +2,7 @@
 
 :root {
     box-sizing: border-box;
+    --main-color: #f46a6a;
 }
 
 @font-face {
@@ -23,26 +24,27 @@ body {
 /* Header */
   
 .header {
-    line-height: 80px;
+    line-height: 90px;
     width: 100%;
     transition: line-height 0.2s linear, box-shadow 0.2s linear;
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
     background: rgb(255, 255, 255);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.025); 
 }
-  
-.header.small {
-    line-height: 50px;
-    box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+
+/* Navbar */
+.nav {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    background: none;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
 }
-  
-.header.small > .container > .logo {
-    height: 1em;
-}
-  
+
 ul.nav {
     float: right;
     list-style: none;
@@ -61,7 +63,7 @@ ul.nav li a {
 }
   
 ul.nav li:hover a {
-    color: #f46a6a;
+    color: var(--main-color);
 }
   
 ul.nav li a {
@@ -70,8 +72,30 @@ ul.nav li a {
     text-decoration: initial;
 }
 
-/* Header */
+.btn-contact {
+    float: right;
+    margin-left: 10px;
+}
 
-.home {
-    padding-top: 20vh;
+.btn-contact {
+    margin-top: 20px;
+    background: var(--main-color) none repeat scroll 0 0;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 500;
+    border-top: 50px;
+    padding:14px 35px;
+    text-transform: uppercase;
+    box-shadow:0 5px 40px 0 rgba(42, 111, 199, 0.2);
+
+}
+    
+/* Home */
+
+.about-text h2 {
+	color: #fff;
+	font-size: 60px;
+	padding-top: 250px;
+	text-transform: none;
 }
