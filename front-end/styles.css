@@ -1,7 +1,6 @@
 /* START General styles */
 
 :root {
-    box-sizing: border-box;
     font-family: 'IBM Plex Sans Regular', sans-serif;
     --main-red: #F46A6A;
     --main-yellow: #FFCB39;
@@ -69,6 +68,7 @@ section {
 }
 
 .main-nav {
+    list-style: none;
     margin-left: 6rem;
 }
 
@@ -176,9 +176,19 @@ ul.main a:active {
 /* END About */
 
 /* START Store */
+
+.main-types {
+    list-style: none;
+}
+
 /* END Store*/
 
 /* START Adopt */
+
+.main-cats {
+    list-style: none;
+}
+
 /* END Adopt */
 
 /* START Contact */
