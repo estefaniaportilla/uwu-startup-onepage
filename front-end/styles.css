@@ -44,7 +44,7 @@ h3 {
 
 section {
     padding: 2rem;
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 
 /* END General styles */
@@ -62,7 +62,7 @@ section {
     width: 100%;
 }
 
-.logo {
+.logo-nav {
     align-self: flex-start;
     margin-top: 1.5rem;
     margin-right: 1rem;
@@ -123,7 +123,7 @@ ul.main a:active {
 }
 
 @media (max-width: 1024px) {
-    .logo {
+    .logo-nav {
         margin-left: .5rem;
         margin-bottom: 1.4rem;
     }
@@ -172,17 +172,41 @@ ul.main a:active {
 /* END Home / Hero section */
 
 
-/* About */
+/* START About */
 /* END About */
 
-/* Store */
+/* START Store */
 /* END Store*/
 
-/* Adopt */
+/* START Adopt */
 /* END Adopt */
 
-/* Contact */
+/* START Contact */
 /* END Contact */
 
-/* Footer */
-/* Footer */
+/* START Footer */
+footer {
+    background-color: var(--main-dark-grey);
+    color: var(--main-light-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+
+    margin-top: 4.3rem;
+    margin-bottom: 4.3rem;
+}
+
+footer .footer-text {
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+footer p {
+    margin: .5rem;
+    font-size: .9rem;
+}
+
+/* END Footer */
