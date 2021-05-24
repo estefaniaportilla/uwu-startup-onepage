@@ -1,4 +1,8 @@
-/* START General styles */
+/* Primer intento grid */
+
+
+
+/* General styles */
 
 :root {
     box-sizing: border-box;
@@ -37,18 +41,16 @@ h3 {
 .btn {
     background-color: var(--main-red);
     color: #fff;
-    padding: .75rem 1.5rem;
-    border-radius: 1.7rem;
+    padding: 1em 2em;
+    border-radius: 28px;
 }
 
 section {
-    padding: 2rem;
+    padding: 2em;
     border: 1px solid black;
 }
 
-/* END General styles */
-
-/* START Navbar */
+/* Navbar */
 .navbar {
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -63,12 +65,7 @@ section {
 
 .logo {
     align-self: flex-start;
-    margin-top: 1.5rem;
-    margin-right: 1rem;
-}
-
-.main-nav {
-    margin-left: 6rem;
+    margin-top: 1.5em;
 }
 
 ul.main-nav li:hover a {
@@ -92,7 +89,7 @@ ul.main a:active {
 
 .main-nav .nav-item {
     display: inline-block;
-    padding: 1.5rem 1.9rem;
+    padding: 20px 30px;
     text-decoration: none;
 }
 
@@ -103,8 +100,8 @@ ul.main a:active {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 1.9rem;
-    height: 1.3rem;
+    width: 30px;
+    height: 21px;
 }
 
 .toggle-btn .bar {
@@ -116,15 +113,8 @@ ul.main a:active {
 }
 
 @media (max-width: 1024px) {
-    .logo {
-        margin-left: .5rem;
-        margin-bottom: 1.4rem;
-    }
-
     .toggle-btn {
         display: flex;
-        margin-top: 1.4rem;
-        margin-right: 1rem;
     }
 
     .main-nav .nav-item {
@@ -154,28 +144,52 @@ ul.main a:active {
         display:flex;
     }
 }
-/* END Navbar */
 
-/* START Home / Hero section */
+/* Home */
+
+.sec-one {
+    display: grid;
+    grid-template-columns: [first] 50% [second] 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-gap: 5px;
+    padding-top: 100px;
+    margin-top: 30px;
+}
+
+.sec-one h1 {
+    grid-column-start: first;
+    grid-row-start: 2;
+    grid-row-start: 2;
+    line-height: 1em;
+    white-space: pre-line;
+    width: 100%;
+    margin: 5px;
+}
+
+.sec-one p {
+    grid-column-start: first;
+    grid-row-start: 3;
+    grid-row-start: 3;
+    margin-top: 1em;
+}
+
+.sec-one button {
+    grid-column-start: first;
+    grid-row-start: 4;
+    grid-row-start: 4;
+    margin-top: 1em;
+}
 
 .mockup img {
     width: 30%;
 }
 
-/* END Home / Hero section */
-
-
 /* About */
-/* END About */
 
 /* Store */
-/* END Store*/
 
 /* Adopt */
-/* END Adopt */
 
 /* Contact */
-/* END Contact */
 
-/* Footer */
 /* Footer */
