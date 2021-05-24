@@ -6,6 +6,7 @@
     --main-red: #F46A6A;
     --main-yellow: #FFCB39;
     --main-dark-grey: #3D3D3D;
+    --main-light-grey: #E6E6E6;
 }
 
 @font-face {
@@ -37,7 +38,7 @@ h3 {
 .btn {
     background-color: var(--main-red);
     color: #fff;
-    padding: .75rem 1.5rem;
+    padding: .80rem 1.80rem;
     border-radius: 1.7rem;
 }
 
@@ -79,6 +80,12 @@ ul.main-nav li:hover a {
 
 ul.main-nav a:link {
     text-decoration: none;
+    color: var(--main-dark-grey);
+}
+
+ul.main-nav .btn a:link {
+    text-decoration: none;
+    color: var(--main-light-greyi);
 }
 
 ul.main-nav a:visited { 
