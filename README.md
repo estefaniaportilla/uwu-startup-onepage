@@ -20,4 +20,7 @@ DISCLAIMER
  All materials developed here, both design and code, are my own, the original files are found locally. UwU is a registered trademark, © 2021 UwU. All rights reserved.
  
  ~~~
+ 
+ Go to: front-end/index.html
+ 
 
