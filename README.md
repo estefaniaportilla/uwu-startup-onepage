@@ -21,6 +21,4 @@ DISCLAIMER
  
  ~~~
  
- Go to: front-end/index.html
- 
 
