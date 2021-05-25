@@ -20,6 +20,7 @@
 
 h1, h2, h3 {
     font-family: 'Nunito Black', sans-serif;
+    color: var(--main-dark-grey);
 }
 
 h1 {
@@ -46,11 +47,16 @@ section {
     border: 1px solid #000;
 }
 
+a {
+    text-decoration: none;
+    color: var(--main-light-greyi);
+}
 /* END General styles */
+
 
 /* START Navbar */
 .navbar {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     display: flex;
     justify-content: space-around;
@@ -64,23 +70,18 @@ section {
 .logo-nav {
     align-self: flex-start;
     margin-top: 1.5rem;
-    margin-right: 1rem;
+    margin-right: 8rem;
 }
 
 .main-nav {
     list-style: none;
-    margin-left: 6rem;
+    margin-left: 20rem;
 }
 
 ul.main-nav li:hover a {
     color: var(--main-red);
     text-decoration: none;
 
-}
-
-ul.main-nav a:link {
-    text-decoration: none;
-    color: var(--main-dark-grey);
 }
 
 ul.main-nav .btn a:link {
@@ -115,10 +116,10 @@ ul.main a:active {
 }
 
 .toggle-btn .bar {
-    height: 3px;
+    height: .18rem;
     width: 100%;
     background-color: var(--main-red);
-    border-radius: 10px;
+    border-radius: .62rem;
 
 }
 
@@ -163,12 +164,57 @@ ul.main a:active {
 }
 /* END Navbar */
 
-/* START Home / Hero section */
 
-.mockup img {
-    width: 30%;
+/* START Home / Hero section */
+.herocontainer {
+    margin-top: 5.72rem;
+    background-image: url("imgs/w-bg.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
 }
 
+.grid-about {
+    display: grid;
+    grid-template-columns: [first] 25% [second] 25% [third] 25% [fourth] 25%;
+    grid-template-rows: 25% 25% 25%;
+    gap: .8rem;
+    margin: 0 4rem 0;
+}
+
+.grid-about h1 {
+    grid-column-start: first;
+    grid-column-end: third;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-top: 8rem;
+}
+
+.grid-about p {
+    grid-column-start: first;
+    grid-column-end: third;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    color: var(--main-dark-grey);
+    font-size: 1.5rem;
+    margin-top: 6rem;
+}
+
+.grid-about .btn-home {
+    grid-column-start: first;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.mockup {
+    width: 160%;
+    margin-left: 6rem;
+}
+
+.grid-about .mockup {
+    grid-column-start: third;
+}
 /* END Home / Hero section */
 
 
@@ -176,19 +222,15 @@ ul.main a:active {
 /* END About */
 
 /* START Store */
-
 .main-types {
     list-style: none;
 }
-
 /* END Store*/
 
 /* START Adopt */
-
 .main-cats {
     list-style: none;
 }
-
 /* END Adopt */
 
 /* START Contact */
@@ -218,5 +260,4 @@ footer p {
     margin: .5rem;
     font-size: .9rem;
 }
-
 /* END Footer */
