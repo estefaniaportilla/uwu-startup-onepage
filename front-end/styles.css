@@ -23,18 +23,6 @@ h1, h2, h3 {
     color: var(--main-dark-grey);
 }
 
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 3em;
-}
-
-h3 {
-    font-size: 2.5em;
-}
-
 .btn {
     background-color: var(--main-red);
     color: #fff;
@@ -44,7 +32,6 @@ h3 {
 
 section {
     padding: 2rem;
-    border: 1px solid #000;
 }
 
 a {
@@ -78,15 +65,13 @@ a {
     margin-left: 20rem;
 }
 
+ul.main a:link {
+    color: var(--main-dark-grey);
+}
+
 ul.main-nav li:hover a {
     color: var(--main-red);
     text-decoration: none;
-
-}
-
-ul.main-nav .btn a:link {
-    text-decoration: none;
-    color: var(--main-light-greyi);
 }
 
 ul.main-nav a:visited { 
@@ -94,8 +79,14 @@ ul.main-nav a:visited {
     color: var(--main-dark-grey); 
 }
 
-ul.main a:active {
-    color: var(--main-dark-grey);
+ul.main-nav .btn a:link, {
+    text-decoration: none;
+    color:#fff;
+}
+
+ul.main-nav .btn a:visited { 
+    text-decoration: none; 
+    color:#fff;
 }
 
 .main-nav .nav-item {
@@ -184,8 +175,9 @@ ul.main a:active {
 }
 
 .grid-about h1 {
+    font-size: 5rem;
     grid-column-start: first;
-    grid-column-end: third;
+    grid-column-end: fourth;
     grid-row-start: 1;
     grid-row-end: 1;
     margin-top: 8rem;
@@ -205,29 +197,66 @@ ul.main a:active {
     grid-column-start: first;
     grid-row-start: 3;
     grid-row-end: 4;
+    margin-top: 2rem;
 }
 
 .mockup {
     width: 160%;
     margin-left: 6rem;
+    margin-top: 2rem;
 }
 
 .grid-about .mockup {
     grid-column-start: third;
+    grid-column-end: fourth;
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 /* END Home / Hero section */
 
 
 /* START About */
+.curveUpRed {
+    margin-top: -20rem;
+    margin-bottom: -.3rem;
+}
+
+.about {
+    background-color: var(--main-red);
+    color: var(--main-light-grey);
+}
+
+.title h2 {
+    font-size: 3em;
+    color:#fff;
+}
+
+.curveDownRed {
+}
+
 /* END About */
 
 /* START Store */
+
+.store {
+    background-image: url("imgs/w-bg.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+}
+
 .main-types {
     list-style: none;
 }
 /* END Store*/
 
 /* START Adopt */
+.adopt {
+    border: 1px solid #000;
+    background-color: var(--main-yellow);
+}
+
 .main-cats {
     list-style: none;
 }
