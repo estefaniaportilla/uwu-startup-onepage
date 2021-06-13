@@ -1,4 +1,6 @@
-https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>
+<a href="http://makeapullrequest.com" rel="nofollow"><img src="https://camo.githubusercontent.com/b0ad703a46e8b249ef2a969ab95b2cb361a2866ecb8fe18495a2229f5847102d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5052732d77656c636f6d652d627269676874677265656e2e737667" alt="PRs Welcome" data-canonical-src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" style="max-width:100%;"></a>
+
+
 # UwU-startup-onepage
 
 Este repositorio forma parte del desarrollo de proyecto web para el startup UwU®, que es una One page (Desktop first) para su Instagram Shop. Esta conformado por dos carpetas, una destinada para el diseño UI (donde se puede visualizar la IA, el wireframing, el diseño plano y el prototipo de alta fidelidad) y otra para el desarrollo Front end (html, css, js).
