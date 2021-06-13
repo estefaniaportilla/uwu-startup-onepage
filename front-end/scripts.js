@@ -1,10 +1,8 @@
 // Intento de script para menú hamburguesa
 
-const toggleBtn = document.getElementsByClassName('toggle-btn')[0]
-const toggleBtn = document.getElementsByClassName('main-nav')[0]
+var toggleBtn = document.getElementsByClassName('toggleBtn')[0]
+var mainNav = document.getElementsByClassName('mainNav')[0]
 
-toggleBtn.addEventListener('click', () => {
-    mainNav.classList.toggle('active')
-})
+toggleBtn.addEventListener('click')
 
 
