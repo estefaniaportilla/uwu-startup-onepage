@@ -1,7 +1,9 @@
 <a href="https://img.shields.io/github/last-commit/estefaniaportilla/uwu-startup-onepage?style=for-the-badge" rel="lastcommit"><img src="https://img.shields.io/github/last-commit/estefaniaportilla/uwu-startup-onepage?style=for-the-badge" style="max-width:100%;"></a>
 
 
-<img src="http://eportilla.design/img/uwu-bgred-invert-logo.svg"> # startup One page
+<img src="http://eportilla.design/img/uwu-bgred-invert-logo.svg">
+
+#UWU startup One page
 
 Este repositorio forma parte del desarrollo de proyecto web para el startup UwU®, que es una One page (Desktop first) para su Instagram Shop. Esta conformado por dos carpetas, una destinada para el diseño UI (donde se puede visualizar la IA, el wireframing, el diseño plano y el prototipo de alta fidelidad) y otra para el desarrollo Front end (html, css, js).
  
@@ -23,5 +25,4 @@ DISCLAIMER
  All materials developed here, both design and code, are my own, the original files are found locally. UwU is a registered trademark, © 2021 UwU. All rights reserved.
  
  ~~~
- 
-<img src="http://eportilla.design/img/uwu-bgred-invert-logo.svg">
+
