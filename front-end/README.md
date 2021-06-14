@@ -19,7 +19,7 @@ Versions of the onepage development:
     |    |___scripts.js
     |    |___ajax-contact.js
     |    |___bootstrap.js
-    |___img
+    |___imgs
     |    |___logos
     |    |    |___uwu-bgred-logo.svg
     |    |    |___uwu-bgred-invert-logo.svg
@@ -63,7 +63,7 @@ Versions of the onepage development:
     |    |___main.scss
     |___js
     |    |___scripts.js
-    |___img
+    |___imgs
     |    |___logos
     |    |    |___uwu-bgred-logo.svg
     |    |    |___uwu-bgred-invert-logo.svg
