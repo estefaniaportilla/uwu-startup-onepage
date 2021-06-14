@@ -14,6 +14,17 @@ I intend to develop the page in two ways:
 
 Dos carpetas / Two folders: 
 1. Pure css: 
+app
+└── screens
+    └── App
+        └── screens
+            ├── Admin
+            │   └── screens
+            │       ├── Reports
+            │       └── Users
+            └── Course
+                └── screens
+                    └── Assignments
 |___root
     |___index.html
     |___styles
