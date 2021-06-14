@@ -14,8 +14,9 @@ I intend to develop the page in two ways:
 
 Dos carpetas / Two folders: 
 1. Pure css: 
-app
-└── screens
+```
+root
+└── index
     └── App
         └── screens
             ├── Admin
@@ -25,6 +26,8 @@ app
             └── Course
                 └── screens
                     └── Assignments
+```
+
 |___root
     |___index.html
     |___styles
