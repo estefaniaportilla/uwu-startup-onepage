@@ -1,4 +1,4 @@
-# Aquí va el desarrollo Front end / Here goes the Front end development
+# Aquí va el desarrollo Front-end / Here goes the Front-end development
 
 Pretendo desarrollar la página de dos formas: 
 1. Con CSS puro y uso de preprocesadores.
@@ -10,9 +10,10 @@ I intend to develop the page in two ways:
 1. With pure CSS and the use of preprocessors.
 2. With Bootstrap.
 
-## EStructura de carpetas / Folder Structure
+## Estructura de carpetas / Folder Structure
 
 Dos carpetas / Two folders: 
+
 1. Pure css: 
 
 ```
@@ -52,6 +53,9 @@ Dos carpetas / Two folders:
     |    |___Nunito-Black.ttf
     |    |___Nunito-Bold.ttf
     |    |___Nunito-ExtraBold.ttf
+    |___api
+    |    |___api.js
+    |    |___instafeed.js
     |___README.md
 ```
 
@@ -95,5 +99,8 @@ Dos carpetas / Two folders:
     |    |___Nunito-Black.ttf
     |    |___Nunito-Bold.ttf
     |    |___Nunito-ExtraBold.ttf
+    |___api
+    |    |___api.js
+    |    |___instafeed.js
     |___README.md
 ```
