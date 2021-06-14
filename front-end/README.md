@@ -1,18 +1,10 @@
 # Front-end & Back-end
 
-Dos desarrollos de la One page: 
+Versions of the onepage development:
 1. Con Bootstrap.
 2. Con CSS puro y uso de preprocesadores.
 
-—
-
-I intend to develop the page in two ways:
-1. With pure CSS and the use of preprocessors.
-2. With Bootstrap.
-
-## Estructura de carpetas / Folder Structure
-
-Dos carpetas / Two folders: 
+## Folder Structure
 
 1. Bootstrap
 
