@@ -1,8 +1,8 @@
 # Front-end & Back-end
 
 Versions of the onepage development:
-1. Con Bootstrap.
-2. Con CSS puro y uso de preprocesadores.
+1. Bootstrap.
+2. Pure CSS & preprocessors.
 
 ## Folder Structure
 
