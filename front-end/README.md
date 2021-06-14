@@ -14,20 +14,8 @@ I intend to develop the page in two ways:
 
 Dos carpetas / Two folders: 
 1. Pure css: 
-```
-root
-└── index
-    └── App
-        └── screens
-            ├── Admin
-            │   └── screens
-            │       ├── Reports
-            │       └── Users
-            └── Course
-                └── screens
-                    └── Assignments
-```
 
+```
 |___root
     |___index.html
     |___styles
@@ -65,8 +53,11 @@ root
     |    |___Nunito-Bold.ttf
     |    |___Nunito-ExtraBold.ttf
     |___README.md
+```
 
 2. Bootstrap
+
+```
 |___root
     |___index.html
     |___styles
@@ -105,3 +96,4 @@ root
     |    |___Nunito-Bold.ttf
     |    |___Nunito-ExtraBold.ttf
     |___README.md
+```
