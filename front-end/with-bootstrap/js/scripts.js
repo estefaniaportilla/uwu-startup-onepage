@@ -2,7 +2,6 @@
    Description: Custom JS file
 */
 
-
 (function($) {
     "use strict"; 
 	
@@ -47,8 +46,10 @@
     .on('mouseenter mouseleave','.dropdown',toggleDropdown)
     .on('click', '.dropdown-menu a', toggleDropdown);
 
+    /* Navbar Scripts ENDS */
 
-    /* Details Lightbox - Magnific Popup */
+
+    /* Contact Lightbox - Magnific Popup START */
     $('.popup-with-move-anim').magnificPopup({
 		type: 'inline',
 		fixedContentPos: true,
@@ -60,109 +61,12 @@
 		removalDelay: 300,
 		mainClass: 'my-mfp-slide-bottom'
 	});
+
+    /* Contact Lightbox - Magnific Popup ENDS */
 	
 
-	/* Image Slider - Swiper */
-    var imageSlider = new Swiper('.image-slider', {
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-		},
-        loop: true,
-        spaceBetween: 50,
-        slidesPerView: 5,
-		breakpoints: {
-            // when window is <= 575px
-            575: {
-                slidesPerView: 1,
-                spaceBetween: 10
-            },
-            // when window is <= 767px
-            767: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            // when window is <= 991px
-            991: {
-                slidesPerView: 3,
-                spaceBetween: 20
-            },
-            // when window is <= 1199px
-            1199: {
-                slidesPerView: 4,
-                spaceBetween: 20
-            },
+    /* Back To Top Button START */
 
-        }
-    });
-    
-
-    /* Card Slider - Swiper */
-	var cardSlider = new Swiper('.card-slider', {
-		autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-		},
-        loop: true,
-        navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev'
-		},
-		slidesPerView: 2,
-		spaceBetween: 40,
-        breakpoints: {
-            // when window is <= 991px
-            991: {
-                slidesPerView: 1
-            }
-        }
-    });
-
-
-    /* Counter - CountTo */
-	var a = 0;
-	$(window).scroll(function() {
-		if ($('#counter').length) { // checking if CountTo section exists in the page, if not it will not run the script and avoid errors	
-			var oTop = $('#counter').offset().top - window.innerHeight;
-			if (a == 0 && $(window).scrollTop() > oTop) {
-			$('.counter-value').each(function() {
-				var $this = $(this),
-				countTo = $this.attr('data-count');
-				$({
-				countNum: $this.text()
-				}).animate({
-					countNum: countTo
-				},
-				{
-					duration: 2000,
-					easing: 'swing',
-					step: function() {
-					$this.text(Math.floor(this.countNum));
-					},
-					complete: function() {
-					$this.text(this.countNum);
-					//alert('finished');
-					}
-				});
-			});
-			a = 1;
-			}
-		}
-    });
-
-
-    /* Move Form Fields Label When User Types */
-    // for input and textarea fields
-    $("input, textarea").keyup(function(){
-		if ($(this).val() != '') {
-			$(this).addClass('notEmpty');
-		} else {
-			$(this).removeClass('notEmpty');
-		}
-	});
-	
-
-    /* Back To Top Button */
     // create the back to top button
     $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
     var amountScrolled = 700;
@@ -173,6 +77,8 @@
             $('a.back-to-top').fadeOut('500');
         }
     });
+
+    /* Back To Top Button ENDS */
 
 
 	/* Removes Long Focus On Buttons */
