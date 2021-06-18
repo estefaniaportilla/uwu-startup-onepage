@@ -92,7 +92,7 @@ a:hover {
 	background-color: #F46A6A;
 	color: #ffffff;
 	font-weight: 600;
-	font-size: 0.875rem;
+	font-size: 1.1rem;
 	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
@@ -220,6 +220,23 @@ a:hover {
 	color: #F46A6A;
 }
 
+.navbar .nav-item .btn-solid-sm {
+	margin-top: 0.125rem;
+	border: 1px solid #181818;
+	background-color: #181818;
+}
+
+.navbar .nav-item .btn-solid-sm:hover {
+	background-color: transparent;
+	color: #181818;
+}
+
+.navbar .navbar-toggler {
+	padding: 0;
+	border: none;
+	font-size: 1.25rem;
+}
+
 /* Dropdown Menu */
 .navbar .dropdown .dropdown-menu {
 	animation: fadeDropdown 0.2s; /* required for the fade animation */
@@ -266,22 +283,7 @@ a:hover {
 }
 /* end of dropdown menu */
 
-.navbar .nav-item .btn-solid-sm {
-	margin-top: 0.125rem;
-	border: 1px solid #181818;
-	background-color: #181818;
-}
 
-.navbar .nav-item .btn-solid-sm:hover {
-	background-color: transparent;
-	color: #181818;
-}
-
-.navbar .navbar-toggler {
-	padding: 0;
-	border: none;
-	font-size: 1.25rem;
-}
 /******** Navbar ENDS *********/
 
 
