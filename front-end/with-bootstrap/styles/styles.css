@@ -294,6 +294,14 @@ a:hover {
 /*    Contact form & Lightbox    */
 /*********************************/
 
+#contact {
+	background-image: url(../imgs/w-bg.svg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
 .form-group {
 	position: relative;
 	margin-bottom: 1.25rem;
@@ -520,6 +528,18 @@ input[type='checkbox'] {
 /***********************/
 /*      Home START     */
 /***********************/
+#home {
+	background-image: url(../imgs/w-bg.svg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: z-index: index;;
+}
+
+.container .row . dots {
+	z-index: 100;
+}
 .header {
 	padding-top: 7rem;
 	padding-bottom: 2.5rem;
@@ -544,29 +564,31 @@ input[type='checkbox'] {
 	margin-bottom: 0.75rem;
 }
 
+/*
 .dotshor1 {
 	margin-left: 31rem;
 	margin-top: -15rem;
-	z-index:-1;
+	z-index: -1;
 }
 
 .dotshor2 {
 	margin-left: 45rem;
 	margin-top: -15rem;
-	z-index:-1;
+	z-index: -1;
 }
 
 .dotsver1 {
 	margin-left: 50rem;
 	margin-top: -15rem;
-	z-index:-1;
+	z-index: -1;
 }
 
 .dotsver2 {
 	margin-left: 50rem;
 	margin-top: -31rem;
-	z-index:-1;
+	z-index: -1;
 }
+*/
 
 /******* Home ENDS *******/
 
@@ -599,7 +621,7 @@ input[type='checkbox'] {
 }
 
 .row .col-lg-5 {
-	padding-left: 1.5rem;
+
 }
 
 /********** About ENDS **********/
@@ -608,10 +630,24 @@ input[type='checkbox'] {
 /***********************/
 /*      Store START    */
 /***********************/
+#store {
+	background-image: url(../imgs/w-bg.svg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+}
 
 .store {
 	padding-top: 7rem;
 	padding-bottom: 7rem;
+}
+
+.infostore {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 
 /***** Store ENDS ******/
@@ -625,7 +661,61 @@ input[type='checkbox'] {
 	padding-top: 7rem;
 	padding-bottom: 7rem;
 	background-color: #FFCB39;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+h2, .kittens {
+	padding-bottom: 2rem;
+}
+
+#myBtnContainer {
+	padding-bottom: 2rem;
+}
+
+.filterDiv {
+	float: left;
+	color: #ffffff;
+	width: 200px;
+	line-height: 100px;
+	text-align: center;
+	margin: 2px;
+	display: none;
+	
+  }
+  
+.show {
+	display: flex;
+	flex-direction: column;
+  }
+  
+.containerCats {
+	margin-top: 20px;
+	overflow: hidden;
+	align-content: center;
+}
+
+
+
+  /* Style the buttons */
+  .btn {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+  }
+  
+  .btn:hover {
+	background-color: #ddd;
+  }
+  
+  .btn.active {
+	background-color: #666;
+	color: white;
+  }
+
 /***** Adopt ENDS *****/
 
 /************************/
@@ -660,7 +750,7 @@ footer p {
 /************************************/
 /*     Back To Top Button START     */
 /************************************/
-a.back-to-top {
+#topBtn {
 	position: fixed;
 	z-index: 999;
 	right: 12px;
@@ -672,9 +762,10 @@ a.back-to-top {
 	background: #515867 url("../imgs/up-arrow.png") no-repeat center 47%;
 	background-size: 18px 18px;
 	text-indent: -9999px;
+	border: none;
 }
 
-a:hover.back-to-top {
+#topBtn:hover.back-to-top {
 	background-color: #181818;
 }
 /***** Back To Top Button ENDS *****/
@@ -879,6 +970,7 @@ a:hover.back-to-top {
 
 /* Medias for dots START */
 
+
 @media (max-width: 1320px){
 	.dotshor1 {
 		margin-left: 30rem;
@@ -982,7 +1074,22 @@ a:hover.back-to-top {
 	}
 }
 
+
 @media (max-width: 992px){
+	#store {
+		background-image: url(../imgs/w-bg.svg);
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: repeat-y;
+		background-size: cover;
+	}
+	
+}
+/*
+	.img-fluid {
+		padding-right: 2.8rem;
+	}
+
 	.row .col-lg-5 {
 		padding-left: 3rem;
 	}
@@ -1006,7 +1113,9 @@ a:hover.back-to-top {
 		display: none;
 		visibility: hidden;
 	}
-}
+	*/
+
+
 /* Medias for dots ENDS */
 
 /**** Media Queries ENDS ****/

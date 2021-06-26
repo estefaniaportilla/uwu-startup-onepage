@@ -19,9 +19,9 @@
         <link href="styles/styles.css" rel="stylesheet"> <!-- General styles -->
         
         <!-- Favicon  -->
-        <link rel="icon" href="imgs/favicon.png">
+        <link rel="icon" href="imgs/favicon.png"> <!-- Missing -->
     </head>
-    <body data-spy="scroll" data-target=".fixed-top">
+    <body> <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
       
         <!-- Navbar STARTS -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-light">
@@ -113,16 +113,20 @@
                     </div> <!-- end of col -->
                     <div class="col-lg-7">
                         <div class="image-container">
-                            <img class="img-fluid" src="imgs/ig-uwu-mckp.png" alt="alternative">
+                            <!-- <picture>
+                                <source media="(max-width: 992px)" srcset="imgs/ig-uwu-mckp.png" />
+                                <img src="imgs/ig-mckup-nosh.png" alt="alternative">
+                            </picture> -->
+                            <img class="img-fluid" src="imgs/ig-mckup-dots.png" alt="alternative">
                         </div> <!-- end of image-container -->
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
-                <div class="dots">
+                <!-- <div class="dots">
                     <img class="dotsver1" src="imgs/dots-red-vert.svg" alt="Dots vertical">
                     <img class="dotshor1" src="imgs/dots-red-horiz.svg" alt="Dots horizontal">
                     <img class="dotsver2" src="imgs/dots-red-vert.svg" alt="Dots vertical">
                     <img class="dotshor2" src="imgs/dots-red-horiz.svg" alt="Dots horizontal">
-                </div>
+                </div> -->
             </div> <!-- end of container -->
         </header> <!-- end of header -->
         <!-- Home ENDS -->
@@ -154,7 +158,7 @@
         <!-- Store START -->
         <section id="store" class="store">
                     <div class="infostore">
-                        <h2>¡Disfruta de nuestros produtos!</h2>
+                        <h1>¡Disfruta de nuestros produtos!</h1>
                         <p>Chase ball of string eat plants, meow, and throw up because I ate plants.</p>
                     </div>
                     <div class="products">
@@ -188,33 +192,56 @@
 
         <!-- Adopt START -->
         <section id="adopt" class=adopt>
+            <h1 class="kittens" >¡Gatitos en busca de un hogar!</h1>
+
+            <div id="myBtnContainer">
+              <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button>
+              <button class="btn" onclick="filterSelection('baby')">2 meses a 1 año</button>
+              <button class="btn" onclick="filterSelection('adult')">De 2 a 7 años</button>
+              <button class="btn" onclick="filterSelection('senior')">Más de 8 años</button>
+            </div>
+            
+            <div class="containerCats">
+              <div class="filterDiv baby"><img src="imgs/adopt1.png" alt="Baby"></div>
+              <div class="filterDiv adult"><img src="imgs/adopt2.png" alt="Adult"></div>
+              <div class="filterDiv senior"><img src="imgs/adopt3.png" alt="Senior"></div>
+              <div class="filterDiv baby"><img src="imgs/adopt4.png" alt="Baby"></div>
+              <div class="filterDiv baby"><img src="imgs/adopt5.png" alt="Baby"></div>
+              <div class="filterDiv senior"><img src="imgs/adopt6.png" alt="Senior"></div>
+              <div class="filterDiv adult"><img src="imgs/adopt7.png" alt="Adult"></div>
+              <div class="filterDiv adult"><img src="imgs/adopt8.png" alt="Adult"></div>
+              <div class="filterDiv senior"><img src="imgs/adopt9.png" alt="Senior"></div>
+            </div>   
+        </section>    
+        <!-- 
+        <section id="adopt" class=adopt>
                     <div class="infoadopt">
                         <h2>¡Gatitos en busca de un hogar!</h2>
                         <p>Chase ball of string eat plants, meow, and throw up because I ate plants.</p>
                     </div>
                     <div class="adoption">
                         <nav class="nav-adopt">
-                            <ul class="main-cats">
-                                <li class="all-cats">Todas las edades</li>
-                                <li class="cat-item">2 meses a 1 año</li>
-                                <li class="cat-item">De 2 a 7 años</li>
-                                <li class="cat-item">Más de 8 años</li>
+                            <ul id="mainCats">
+                                <li class="btn-active" onclick="filterSelection('all')">Todas las edades</li>
+                                <li class="btn" onclick="filterSelection('baby')">2 meses a 1 año</li>
+                                <li class="btn" onclick="filterSelection('adult')">De 2 a 7 años</li>
+                                <li class="btn" onclick="filterSelection('senior')">Más de 8 años</li>
                             </ul>
                         </nav>
                         <div class="cats">
-                            <img src="imgs/adopt1.png" alt="UwU red logo">
-                            <img src="imgs/adopt2.png" alt="UwU red logo">
-                            <img src="imgs/adopt3.png" alt="UwU red logo">
-                            <img src="imgs/adopt4.png" alt="UwU red logo">
-                            <img src="imgs/adopt5.png" alt="UwU red logo">
-                            <img src="imgs/adopt6.png" alt="UwU red logo">
-                            <img src="imgs/adopt7.png" alt="UwU red logo">
-                            <img src="imgs/adopt8.png" alt="UwU red logo">
-                            <img src="imgs/adopt9.png" alt="UwU red logo">
+                            <img class="filterDiv baby" src="imgs/adopt1.png" alt="UwU red logo">
+                            <img class="filterDiv adult" src="imgs/adopt2.png" alt="UwU red logo">
+                            <img class="filterDiv senior" src="imgs/adopt3.png" alt="UwU red logo">
+                            <img class="filterDiv baby" src="imgs/adopt4.png" alt="UwU red logo">
+                            <img class="filterDiv baby" src="imgs/adopt5.png" alt="UwU red logo">
+                            <img class="filterDiv senior" src="imgs/adopt6.png" alt="UwU red logo">
+                            <img class="filterDiv adult" src="imgs/adopt7.png" alt="UwU red logo">
+                            <img class="filterDiv adult" src="imgs/adopt8.png" alt="UwU red logo">
+                            <img class="filterDiv senior" src="imgs/adopt9.png" alt="UwU red logo">
                         </div>
                     </div>
                     <a class="btn-solid-lg" href="https://www.instagram.com/">Conoce más gatitos</a>
-        </section>
+        </section> -->
         <!-- Adopt ENDS -->
 
 
